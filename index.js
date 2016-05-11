@@ -13,8 +13,9 @@ module.exports = function CAT(ast, options){
 
 	var color = ast.color ? chalk[ast.color] : null, row = [];
 	if(color instanceof Function){
-		ast.label = options.prefix.join('') + (chanks[options.chank] ? chanks[options.chank] + chanks['label'] : '') + color(ast.label || '');
+		ast.label = color(ast.label || '');
 	}
+	ast.label = options.prefix.join('') + (chanks[options.chank] ? chanks[options.chank] + chanks['label'] : '') + ast.label;
 	row.push(ast.label);
 
 	if(ast.nodes){
