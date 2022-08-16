@@ -1,4 +1,5 @@
-var chalk = require("chalk");
+import chalk from "chalk";
+
 var chanks = {
 	"more": "├",
 	"gap": "│  ",
@@ -6,7 +7,7 @@ var chanks = {
 	"label": "─ "
 };
 
-module.exports = function CAT(ast, options){
+export function CAT(ast, options){
 	var isRoot = !options;
 	if(!options){ options = {}; }
 	if(!options.prefix) options.prefix = [];
@@ -34,4 +35,4 @@ module.exports = function CAT(ast, options){
 	}
 
 	return row.join('\n');
-};
+}

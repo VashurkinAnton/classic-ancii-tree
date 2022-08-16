@@ -1,4 +1,5 @@
-var CAT = require('./index.js');
+import { CAT } from './index.js';
+
 var ast = {
   "label": "1/a/bb/",
   "nodes": [

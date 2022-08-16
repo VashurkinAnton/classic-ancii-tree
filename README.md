@@ -8,7 +8,8 @@ npm install classic-ancii-tree
 # Example
 
 ```
-var CAT = require('classic-ancii-tree');
+import { CAT } from 'classic-ancii-tree';
+
 var ast = {
   "label": "1/a/bb/",
   "nodes": [
@@ -81,7 +82,7 @@ output
 
 # Methods
 
-var CAT = require('classic-ancii-tree');
+import { CAT } from 'classic-ancii-tree';
 
 ## CAT(obj)
 
