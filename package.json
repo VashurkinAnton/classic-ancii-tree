@@ -1,6 +1,7 @@
 {
   "name": "classic-ancii-tree",
   "version": "1.0.1",
+  "type": "module",
   "description": "Draws a tree with a classic ancii style and ancii colors from chalk.",
   "main": "index.js",
   "scripts": {
@@ -20,6 +21,6 @@
   "author": "Anton Vashurkin <cronosfera2@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^1.1.3"
+    "chalk": "^5.0.1"
   }
 }
